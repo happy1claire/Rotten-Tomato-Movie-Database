@@ -9,6 +9,7 @@ The database provides easy access to comprehensive movie information, enabling u
 
 ### Logical Design
 The Entity-Relationship Diagram (ERD) demonstrates the logical design of the database.
+<br>
 ![image info](./ERD.png)
 
 ### Physical Database
