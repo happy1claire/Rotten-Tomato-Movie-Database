@@ -72,9 +72,3 @@ The script includes several analytical views:
 - Applied ER modeling for real-world database structuring
 - Practiced integrity constraints and efficient querying
 
----
-
-## 📌 Author
-
-Claire Liu – Graduate Student @ Northeastern University  
-[GitHub](https://github.com/happy1claire)
