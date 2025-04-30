@@ -1,28 +1,80 @@
-# Rotten-Tomato-Movie-Database
+# 🍅 Rotten Tomato Movie Database
 
-## Introduction
-In the era of widespread access to over-the-top (OTT) media services, users are faced with a vast array of movie options, making choosing a suitable movie a common task. This project aims to build a database that collects the basic information of existing movies, focusing on attributes such as the cast, director, and rating. The main target audience includes movie enthusiasts, casual viewers, and film bloggers/influencers.
+A relational database project that models and queries movie, critic, and adaptation data, inspired by Rotten Tomatoes. The project is designed to provide structured insights into film data such as cast, director, genres, and adaptations through normalized schemas and SQL queries.
 
-The database provides easy access to comprehensive movie information, enabling users to quickly find essential details about a movie and compare various aspects of different movies in one place. This enhances decision-making and provides detailed information about the original works from which the movies are adapted and their authors, appealing to users interested in adaptations.
+---
 
-## Database Design and Implementation
+## 🎯 Project Overview
 
-### Logical Design
-The Entity-Relationship Diagram (ERD) demonstrates the logical design of the database.
-<br>
-![image info](./ERD.png)
+As streaming platforms expand, viewers are overwhelmed with choices. This project helps simplify decision-making by offering a cleanly structured relational database of movie information. Key features include:
 
-### Physical Database
-The physical database is structured according to the corresponding SQL script provided.
+- Access to detailed metadata (cast, director, country, rating)
+- Exploration of film adaptations and their sources
+- Analytical views on genres, length, ratings, and box office performance
 
-### Sample Data
-30 randomly selected movies are collected as the sample data, primarily retrieved from Rotten Tomatoes, supplemented with fields such as budget and box office earnings collected manually.
+---
 
-### Queries
-Five views are created covering genres, adaptations, movie length, etc. The views are as follows:
-- `generes_box_office`
-- `country_most_adpations`
-- `average_movie_length_us`
-- `adapted_movie_ratings`
-- `most_common_genre_post2000`
+## 🧩 Database Design
 
+### 🔷 Entity-Relationship Diagram
+
+The ERD models entities such as movies, people (actors, directors), genres, and source material:
+
+![ER Diagram](./ERD.png)
+
+### 📐 MySQL Workbench Model
+
+Design files can be explored directly via the included MySQL Workbench file:
+
+> **File:** `db_ERD.mwb`
+
+---
+
+## 🗃️ Implementation & Sample Data
+
+The database was created using a single SQL script:
+
+> **File:** `db_scirpit_with_views.sql`
+
+- Includes table creation (DDL), data insertion, and SQL views
+- Sample data includes 30 movies sourced from Rotten Tomatoes
+- Additional fields (e.g., budget, box office) were manually curated
+
+---
+
+## 🔍 Key SQL Views
+
+The script includes several analytical views:
+
+| View Name | Description |
+|-----------|-------------|
+| `genres_box_office` | Compare box office earnings by genre |
+| `country_most_adaptations` | Find countries with the most film adaptations |
+| `average_movie_length_us` | Analyze average runtime of U.S. films |
+| `adapted_movie_ratings` | Compare ratings of adapted vs. original films |
+| `most_common_genre_post2000` | Most frequent genres after 2000 |
+
+---
+
+## 🛠️ Technologies Used
+
+- **MySQL**
+- **MySQL Workbench**
+- **SQL Views**
+- **ER Modeling**
+
+---
+
+## 💡 Key Learning Outcomes
+
+- Built and normalized relational schemas (1NF–3NF)
+- Created and optimized SQL views for film data analytics
+- Applied ER modeling for real-world database structuring
+- Practiced integrity constraints and efficient querying
+
+---
+
+## 📌 Author
+
+Claire Liu – Graduate Student @ Northeastern University  
+[GitHub](https://github.com/happy1claire)
