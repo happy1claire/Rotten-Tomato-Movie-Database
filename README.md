@@ -20,7 +20,7 @@ As streaming platforms expand, viewers are overwhelmed with choices. This projec
 
 The ERD models entities such as movies, people (actors, directors), genres, and source material:
 
-![ER Diagram](./ERD.png)
+![ER Diagram](./diagrams/ERD.png)
 
 ### 📐 MySQL Workbench Model
 
